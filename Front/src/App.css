@@ -35,7 +35,7 @@ label {
 }
 
 .new-member-form {
-    margin: 2em 0 4em 0;
+    margin: 2em 0 2em 0;
     text-align: center;
 }
 
@@ -53,4 +53,7 @@ footer {
     color: #fff;
     background: #f76c6c;
     padding: 0.25em 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
