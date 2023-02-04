@@ -1,19 +1,28 @@
-import useGetEquipiers from "@/hooks/useGetEquipiers";
-import { setEquipier } from "@/library/equipiers";
+import { getEquipiers, setEquipier } from "@/library/equipiers";
 import { Equipier } from "@/library/interfaces";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import GetMember from "./GetMember";
 
 export default function SetMember() {
     const [newEquipier, setNewEquipier] = useState<string>("");
     const [equipiers, setEquipiers] = useState<Equipier[]>([]);
-    // const equipiers = useGetEquipiers() as Equipier[];
+
+    async function addEquipierToState() {
+        const data = await getEquipiers();
+        setEquipiers(data);
+    }
+
+    useEffect(() => {
+        addEquipierToState();
+    }, []);
 
     async function addEquipier() {
         try {
             await setEquipier({ name: newEquipier });
         } catch (error) {
             console.log(error);
+        } finally {
+            addEquipierToState();
         }
     }
 

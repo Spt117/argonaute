@@ -5,6 +5,11 @@ import Equipiers from "@/models/equipiers";
 export default async function (req: NextApiRequest, res: NextApiResponse) {
     connectMongo();
 
+    // const changeStream = Equipiers.watch();
+    // changeStream.on("change", (data) => {
+    //     console.log(data);
+    // });
+
     if (req.method === "GET") {
         const equipiers = await Equipiers.find();
         res.status(200).json(equipiers);

@@ -1,6 +1,6 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
-import Member from "@/components/Member";
+import SetMember from "@/components/SetMember";
 import Head from "next/head";
 
 export default function Home() {
@@ -19,7 +19,7 @@ export default function Home() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <Header />
-            <Member />
+            <SetMember />
             <Footer />
         </>
     );
