@@ -4,7 +4,7 @@ import axios from "axios";
 export default function Member() {
     const [equipier, setEquipier] = useState("");
     const [list, setList] = useState([]);
-    const api = "https://argonautes-back.vercel.app/api/equipiers";
+    const api = "http://localhost:4000/api/equipiers";
 
     useEffect(() => {
         getListMember();

@@ -37,7 +37,6 @@ app.post("/api/equipiers", (req, res) => {
 
 app.use("/api/equipiers", async (req, res) => {
     const equipiers = await Equipier.find();
-    console.log("Voici les équipiers :" + equipiers);
     res.json(equipiers);
 });
 
