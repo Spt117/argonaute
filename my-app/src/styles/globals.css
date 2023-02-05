@@ -57,3 +57,9 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+button {
+    width: 6rem;
+    background: #f7ad25;
+    cursor: pointer;
+}

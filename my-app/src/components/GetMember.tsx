@@ -1,10 +1,6 @@
-import { ArrayEquipiers, Equipier } from "@/library/interfaces";
+import { ArrayEquipiers, Equipier } from "@/library/interfaces"
 
-export default function GetMember({
-    equipiers,
-}: {
-    equipiers: ArrayEquipiers;
-}): JSX.Element {
+export default function GetMember({ equipiers }: { equipiers: ArrayEquipiers }): JSX.Element {
     return (
         <>
             <h2>Membres de l'équipage</h2>
@@ -16,5 +12,5 @@ export default function GetMember({
                 ))}
             </section>
         </>
-    );
+    )
 }
