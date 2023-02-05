@@ -27,6 +27,7 @@ export default function UpdateMember({ equipiers, addEquipierToState }: { equipi
                 <br />
                 <input type="text" placeholder="Nouveau nom" onChange={(e) => setUpdate({ ...update, newName: e.target.value })} id="new" />
             </div>
+            <br />
             <button onClick={updateEquipierByName}>Modifier</button>
         </>
     )
