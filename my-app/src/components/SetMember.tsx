@@ -3,6 +3,7 @@ import { Equipier } from "@/library/interfaces"
 import { useEffect, useState } from "react"
 import DeleteMember from "./DeleteMember"
 import GetMember from "./GetMember"
+import UpdateMember from "./UpdateMember"
 
 export default function SetMember() {
     const [newEquipier, setNewEquipier] = useState<string>("")
@@ -42,6 +43,9 @@ export default function SetMember() {
                 <br />
                 <br />
                 <DeleteMember equipiers={equipiers} addEquipierToState={addEquipierToState} />
+                <br />
+                <br />
+                <UpdateMember equipiers={equipiers} addEquipierToState={addEquipierToState} />
             </div>
             <GetMember equipiers={equipiers} />
         </>
