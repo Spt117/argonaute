@@ -1,6 +1,6 @@
 import { NextApiRequest, NextApiResponse } from "next"
 import connectMongo from "@/library/connect"
-import { deleteOneMember, updateOneMember } from "@/library/controllers"
+import { deleteOneMember, updateOneMember } from "@/controllers/controllerMember"
 
 export default async (req: NextApiRequest, res: NextApiResponse): Promise<void> => {
     connectMongo()
