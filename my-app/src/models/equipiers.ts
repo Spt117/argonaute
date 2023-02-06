@@ -1,9 +1,9 @@
-import { Schema, model, models } from "mongoose";
+import { Schema, model, models } from "mongoose"
 
 const equipiersShema = new Schema({
     name: { type: String, required: true },
-});
+})
 
-const Equipiers = models.equipiers || model("equipiers", equipiersShema);
+const Equipiers = models.equipiers || model("equipiers", equipiersShema)
 
-export default Equipiers;
+export default Equipiers
