@@ -9,3 +9,8 @@ export interface UpdateEquipier {
     oldName: string
     newName: string
 }
+
+export interface userSchema extends Document {
+    email: string
+    password: string
+}
