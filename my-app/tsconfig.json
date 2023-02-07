@@ -19,6 +19,14 @@
             "@/*": ["./src/*"]
         }
     },
-    "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/pages/api/[id].ts", "src/pages/api/[id].ts"],
+    "include": [
+        "next-env.d.ts",
+        "**/*.ts",
+        "**/*.tsx",
+        "src/pages/api/[id].ts",
+        "src/pages/api/[id].ts",
+        "../../CV/V2 typescript/src/components/Background.jsxmponents/Background.jsx",
+        "../../CV/V2 typescript/src/components/Background.jsxmponents/Background.jsx"
+    ],
     "exclude": ["node_modules"]
 }
